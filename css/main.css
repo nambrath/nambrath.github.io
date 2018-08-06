@@ -25,11 +25,11 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Didact Gothic', 'Sans-Serif';
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 h2 {
     font-family: 'Didact Gothic', 'Sans-Serif';
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 p {
     font-family:'Roboto Mono', 'Sans-Serif';
@@ -42,11 +42,6 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
+ul li {
+    font-family: 'Roboto Mono';
 }
