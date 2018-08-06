@@ -31,6 +31,9 @@ h2 {
     font-family: 'Didact Gothic', 'Sans-Serif';
     letter-spacing: 1px;
 }
+ul li {
+    font-family: 'Roboto Mono', 'Sans-Serif';
+}
 p {
     font-family:'Roboto Mono', 'Sans-Serif';
     font-size: 1.5em;
@@ -40,8 +43,4 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
-
-ul li {
-    font-family: 'Roboto Mono';
 }
