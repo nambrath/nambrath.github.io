@@ -25,6 +25,11 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Didact Gothic', 'Sans-Serif';
+    letter-spacing: 5px;
+}
+h2 {
+    font-family: 'Didact Gothic', 'Sans-Serif';
+    letter-spacing: 2px;
 }
 p {
     font-family:'Roboto Mono', 'Sans-Serif';
