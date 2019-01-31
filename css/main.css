@@ -38,7 +38,13 @@ ul li {
     font-size: 1em;
     margin: 0 0 8px 0;
 }
-p {
+.para {
+    font-family:'Roboto Mono', 'Sans-Serif';
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #333;
+}
+.sub {
     font-family:'Roboto Mono', 'Sans-Serif';
     font-size: 1.5em;
     line-height: 1.4em;
