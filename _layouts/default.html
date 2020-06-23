@@ -18,10 +18,10 @@
 	<body>
 		<nav>
     		<ul>
-        		<li><a href="/" style="color:#999">About</a></li>
-	        	<li><a href="/classes/" style="color:#999">Classes</a></li>
-	        	<li><a href="/research/" style="color:#999">Research</a>
-        		<li><a href="/stuff/CV.pdf" style="color:#999">CV</a></li>
+        		<li><a href="/" class='nav' >About</a></li>
+	        	<li><a href="/research/" class='nav'>Research</a>
+				<li><a href="/classes/" class='nav'>Classes</a></li>
+        		<li><a href="/stuff/CV.pdf" class='nav'>CV</a></li>
     		</ul>
 		</nav>
 		<div class="container">
@@ -34,3 +34,14 @@
 		</footer>
 	</body>
 </html>
+<script src="/js/konami.js"></script>
+<script>
+	var easter_egg = new Konami(function() { 
+		//  '.class1:not(.class2)'
+		var h_tags = document.querySelectorAll("h1, h2, a:not(.nav)");
+		for(var i = 0; i<h_tags.length; i++){
+			h_tags[i].classList.toggle('rainbow');
+		}
+	});
+</script>
+

@@ -16,9 +16,9 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
+	font-weight: 600;
 	text-decoration: none;
-	font-weight: bold;
-    color: #13cf99;
+    color: #06b987;
 }
 a:hover {
     text-decoration: underline;
@@ -51,8 +51,70 @@ ul li {
     line-height: 1.4em;
     color: #333;
 }
+.nav {
+	font-weight: bold;
+	color: #999;
+}
+.loc {
+	color: #666;
+}
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
     padding: 0 0 0 20px;
 }
+
+
+.rainbow {
+    /* Chrome, Safari, Opera */
+   -webkit-animation: rainbow 5s infinite; 
+   /* Internet Explorer */
+   -ms-animation: rainbow 5s infinite;
+   /* Standar Syntax */
+   animation: rainbow 5s infinite; 
+ }
+ 
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
+ 
+ /* Internet Explorer */
+ @-ms-keyframes rainbow{
+    0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
+ 
+ /* Standar Syntax */
+ @keyframes rainbow{
+     0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
