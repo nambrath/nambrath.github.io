@@ -59,6 +59,15 @@ ul li {
 .loc {
 	color: #666;
 }
+
+.rule {
+	margin: 50px 0 50px 0;
+	color: #ddd;
+	background-color: #ddd;
+	border: #ddd;
+	height: 1px;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
