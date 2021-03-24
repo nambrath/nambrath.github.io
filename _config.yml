@@ -1,2 +1,5 @@
 name: Anjali Nambrath
+title: Anjali Nambrath
 markdown: kramdown
+plugins:
+  - jekyll-seo-tag
