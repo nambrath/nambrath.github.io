@@ -3,8 +3,8 @@
 
 body {
     margin: 60px auto;
-	width: 70%;
-	font-family:'Roboto Mono', 'Sans-Serif';
+	  width: 70%;
+	  font-family:'Roboto Mono', 'Sans-Serif';
 }
 nav ul, footer ul {
     font-family:'Roboto Mono', 'Sans-Serif';
@@ -39,6 +39,30 @@ ul li {
 .snapshot li {
     font-size: 1em;
     margin: 0 0 8px 0;
+}
+.snapshot {
+  margin: 0 0 30px 0;
+}
+.img-text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#myface {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 10px 30px 10px 0;
+    float: left;
+}
+@media screen and (max-width: 800px) {
+  .img-text{
+    align-items: baseline;
+    flex-direction: column;
+  }
+  #myface {
+    margin: 30px 0 0 0;
+  }
 }
 .para {
     font-family:'Roboto Mono', 'Sans-Serif';
