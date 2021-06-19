@@ -74,7 +74,10 @@ ul li {
   margin: 15px 0px 10px 10px;
   float: right;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
+  body {
+    width: 80%;
+  }
   .img-text{
     align-items: center;
     flex-direction: column;
@@ -100,6 +103,7 @@ ul li {
   }
   #flowers {
     width: 300px;
+    height: auto;
     margin: 10px 0 10px 0;
   }
   #photog {
