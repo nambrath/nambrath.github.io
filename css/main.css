@@ -55,13 +55,60 @@ ul li {
     margin: 10px 30px 10px 0;
     float: left;
 }
-@media screen and (max-width: 800px) {
+.img-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 10%;
+}
+#flowers {
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 15px 10px 10px 0;
+  float: left;
+}
+#photog {
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 15px 0px 10px 10px;
+  float: right;
+}
+@media screen and (max-width: 900px) {
   .img-text{
-    align-items: baseline;
+    align-items: center;
     flex-direction: column;
+  }
+  .img-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .title {
+    text-align: center;
+  }
+  .navbar{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
   }
   #myface {
     margin: 30px 0 0 0;
+  }
+  #flowers {
+    width: 300px;
+    margin: 10px 0 10px 0;
+  }
+  #photog {
+    width: 300px;
+    height: auto;
+    margin: 0 0 10px 0;
+  }
+  .caption {
+    padding-left: 10%;
   }
 }
 .para {
@@ -83,7 +130,13 @@ ul li {
 .loc {
 	color: #666;
 }
-
+.caption {
+  color: #666;
+  font-size: 0.75em;
+  text-align: center;
+  padding-right: 10%;
+  margin-bottom: 20px;
+}
 .rule {
 	margin: 50px 0 50px 0;
 	color: #ddd;

@@ -18,13 +18,13 @@
 		</script>
 	</head>
 	<body>
-		<nav>
+		<nav class='navbar'>
     		<ul>
-        		<li><a href="/" class='nav' >About</a></li>
-	        	<li><a href="/research/" class='nav'>Research</a>
-				<li><a href="/classes/" class='nav'>Classes</a></li>
-	        	<li><a href="/teaching/" class='nav'>Teaching</a>
-					<li><a href="/stuff/CV.pdf" class='nav'>CV</a></li>
+				<li><a href="/" class='nav' >Home</a></li>
+	        	<li><a href="/research/" class='nav'>Research</a></li>
+				<li><a href="/teaching/" class='nav'>Teaching</a></li>
+				<li><a href="/about/" class='nav'>About</a></li>
+				<li><a href="/stuff/CV.pdf" target="_blank" class='nav'>CV</a></li>
     		</ul>
 		</nav>
 		<div class="container">
@@ -32,7 +32,7 @@
 		</div><!-- /.container -->
 		<footer>
     		<ul>
-        		<li><a href="mailto:anjali@mit.edu" style="color:#999">email me!</a></li>
+        		<li><a href="mailto:nambrath@berkeley.edu" style="color:#999">email me!</a></li>
 			</ul>
 		</footer>
 	</body>
@@ -41,10 +41,23 @@
 <script>
 	var easter_egg = new Konami(function() { 
 		//  '.class1:not(.class2)'
+		let iskonami = localStorage.getItem('konami');
+		if (iskonami==='true') {
+			localStorage.setItem('konami','false');
+		} else {
+			localStorage.setItem('konami','true');
+		}
 		var h_tags = document.querySelectorAll("h1, h2, a:not(.nav)");
 		for(var i = 0; i<h_tags.length; i++){
 			h_tags[i].classList.toggle('rainbow');
 		}
 	});
+	const storedkonami = localStorage.getItem('konami');
+	if (storedkonami==='true') {
+		var h_tags = document.querySelectorAll("h1, h2, a:not(.nav)");
+		for(var i = 0; i<h_tags.length; i++){
+			h_tags[i].classList.toggle('rainbow');
+		}
+	}
 </script>
 
