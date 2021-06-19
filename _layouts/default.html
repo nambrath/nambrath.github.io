@@ -39,20 +39,21 @@
 </html>
 <script src="/js/konami.js"></script>
 <script>
+	// to make it stop, do whatever you did to make it start. sorry but not sorry
 	var easter_egg = new Konami(function() { 
 		//  '.class1:not(.class2)'
-		let iskonami = localStorage.getItem('konami');
+		let iskonami = sessionStorage.getItem('konami');
 		if (iskonami==='true') {
-			localStorage.setItem('konami','false');
+			sessionStorage.setItem('konami','false');
 		} else {
-			localStorage.setItem('konami','true');
+			sessionStorage.setItem('konami','true');
 		}
 		var h_tags = document.querySelectorAll("h1, h2, a:not(.nav)");
 		for(var i = 0; i<h_tags.length; i++){
 			h_tags[i].classList.toggle('rainbow');
 		}
 	});
-	const storedkonami = localStorage.getItem('konami');
+	const storedkonami = sessionStorage.getItem('konami');
 	if (storedkonami==='true') {
 		var h_tags = document.querySelectorAll("h1, h2, a:not(.nav)");
 		for(var i = 0; i<h_tags.length; i++){
