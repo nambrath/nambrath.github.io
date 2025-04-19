@@ -1,0 +1,53 @@
+---
+layout: default
+title: Random MoMA Photo
+permalink: /moma/
+---
+
+<div class="blurb">
+  <h2 style="margin-bottom: 1rem;">from the MoMA photography collection</h2>
+  <div id="photo-container">
+    <p>loading...</p>
+  </div>
+</div>
+
+<script>
+  let photos = [];
+
+  fetch('{{ "../stuff/photography.json" | relative_url }}')
+    .then(response => response.json())
+    .then(data => {
+      photos = data;
+      showRandomPhoto();
+    });
+
+  function showRandomPhoto() {
+    const container = document.getElementById('photo-container');
+    if (photos.length === 0) return;
+
+    const photo = photos[Math.floor(Math.random() * photos.length)];
+    container.innerHTML = `
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+        <div style="flex: 1; min-width: 250px;">
+            <p class="para" style="margin: 0;">${photo.Title || "Untitled"}</p>
+            <p class="para" style="margin: 0.2rem 0 1rem; font-style: italic;">
+                ${photo.Artist || "Unknown"}, ${photo.Date || ""}
+            </p>
+            <a 
+                href="javascript:void(0);" 
+                onclick="showRandomPhoto()" 
+            >
+                another!
+            </a>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; height: 65vh; overflow: hidden; margin-right:1rem; margin-bottom: 2rem;">
+            <img 
+            src="${photo.ImageURL}" 
+            alt="${photo.Title}" 
+            style="max-height: 100%; max-width: 100%; object-fit: contain; "
+            />
+        </div>
+        </div>
+    `;
+  }
+</script>
